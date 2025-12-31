@@ -1,0 +1,1 @@
+Get-ChildItem -Path . -Recurse -File | Where-Object { $_.Length -gt 104857600 } | Select-Object FullName, Length
